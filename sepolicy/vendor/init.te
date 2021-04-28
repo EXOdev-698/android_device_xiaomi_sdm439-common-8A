@@ -10,3 +10,6 @@ allow init sysfs_leds:lnk_file r_file_perms;
 
 # Prop
 set_prop(init, vendor_security_patch_level_prop)
+
+# Smart charging
+allow init sysfs_battery_supply:file { setattr };
